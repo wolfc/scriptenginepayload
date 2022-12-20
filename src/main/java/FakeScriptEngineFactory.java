@@ -4,6 +4,7 @@ import java.util.List;
 
 public class FakeScriptEngineFactory implements ScriptEngineFactory {
     public FakeScriptEngineFactory() {
+        new Exception("Where is the cat?").printStackTrace();
         System.err.println("***** I FOUND THE CAT *****");
         System.exit(1);
     }
